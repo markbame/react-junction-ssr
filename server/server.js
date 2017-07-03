@@ -23,7 +23,7 @@ server.get('*', async (req, res) => {
       try {
         axios.get('http://api.tvmaze.com/search/shows?q=girls').then(res => {
         data = {shows : res.data}
-          // console.log(res.data)
+         console.log(res.data)
       }).catch(function(error) {
 	         console.log(error)
       })

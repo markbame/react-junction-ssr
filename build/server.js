@@ -119,9 +119,8 @@
 
 	            try {
 	              _axios2.default.get('http://api.tvmaze.com/search/shows?q=girls').then(function (res) {
-	                data = { shows: res.data
-	                  // console.log(res.data)
-	                };
+	                data = { shows: res.data };
+	                console.log(res.data);
 	              }).catch(function (error) {
 	                console.log(error);
 	              });
